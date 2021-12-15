@@ -1,5 +1,5 @@
 #Long loops way
-n_l = (1..8).to_a
+n_l = (1..8).to_a #[1,2,3,4,5,6,7,8]
 
 s = []
 i = 1
@@ -13,9 +13,9 @@ p s
 
 number_list = (1..8).to_a
 solution = []
-for i in number_list
-  if i > 5
-    solution << i * 100
+for n in number_list
+  if n > 5
+    solution << n * 100
   end
 end
 p solution
@@ -30,9 +30,9 @@ end
 p result
 
 #Concise way
-p [1,2,3,4,5,6,7,8].select{|n| n > 5}.map{|n| n*100}
+p [1,2,3,4,5,6,7,8].select{|n| n > 5}.collect{|n| n*100}
 
-p [1,2,3,4,5,6,7,8].select{|n| n > 5}.map{|n| n+1}.delete_if{|n| n % 2 == 0}
+p [1,2,3,4,5,6,7,8].select{|n| n > 5}.collect{|n| n+1}.delete_if{|n| n % 2 == 0}
 
 
 

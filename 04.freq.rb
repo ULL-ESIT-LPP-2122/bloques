@@ -29,4 +29,4 @@ t5.each{ |word, count| puts "#{word}: #{count}"}
 
 puts "====="
 
-puts t5.map{|word, count| "#{word}: #{count}"}
+puts t5.collect{|word, count| "#{word}: #{count}"}

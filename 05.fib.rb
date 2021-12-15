@@ -32,7 +32,7 @@ def fib_memoization(n)
 end
 
 
-#puts (1..5).map { |i| fib_memoization(i)}
+#puts (1..5).memoization { |i| fib_memoization(i)}
 
 
 
